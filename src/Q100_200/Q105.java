@@ -5,6 +5,8 @@ import publicUtil.TreeNode;
 /*
 根据一棵树的前序遍历与中序遍历构造二叉树。
 你可以假设树中没有重复的元素。
+
+递归的时候尽量思考下一步和终止条件即可
  */
 public class Q105 {
     public static int pre = 0;
