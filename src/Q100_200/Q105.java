@@ -13,7 +13,7 @@ public class Q105 {
         int[] preOrder = {3, 9, 20, 15, 7};
         int[] inOrder = {9, 3, 15, 20, 7};
         TreeNode head = buildTree(preOrder, inOrder);
-        TreeNode.output(head);
+//        TreeNode.output(head);
     }
 
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
