@@ -2,37 +2,48 @@ package Q100_200;
 
 import publicUtil.TreeNode;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /*
  * 给定一个二叉树和一个目标和，找到所有从根节点到叶子节点路径总和等于给定目标和的路径。
  */
 public class Q113 {
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
-        if (root == null) return new LinkedList<List<Integer>>();
-        List<Integer> list = new LinkedList<Integer>();
-        List<List<Integer>> result = new LinkedList<List<Integer>>();
-        func(root, sum, 0, list, result);
-        return result;
-    }
+        if(root ==null) return new ArrayList<>();
 
-    public void func(TreeNode root, int sum, int tempSum, List<Integer> list, List<List<Integer>> result) {
-        tempSum += root.val;
+        List<List<Integer>> resultList=new LinkedList<>();
+        Queue<NodeAndList> queue=new LinkedList<>();
+        List<Integer> list=new LinkedList<>();
         list.add(root.val);
-
-        if (root.left == null && root.right == null && tempSum == sum)
-            result.add(new LinkedList<Integer>(list));
-
-        if (root.left != null) func(root.left, sum, tempSum, list, result);
-        if (root.right != null) func(root.right, sum, tempSum, list, result);
-
-        for (int i = list.size() - 1; i >= 0; i--) {
-            if (list.get(i).equals(root.val)) {
-                list.remove(i);
-                break;
+        queue.add(new NodeAndList(root,list,root.val));
+        while(!queue.isEmpty()){
+            NodeAndList n=queue.poll();
+            if (n.node.left==null && n.node.right==null && n.value==sum)    resultList.add(n.list);
+            if(n.node.left!=null){
+                List<Integer> newList=new LinkedList<>(n.list);
+                newList.add(n.node.left.val);
+                queue.add(new NodeAndList(n.node.left,newList,n.node.left.val+n.value));
+            }
+            if(n.node.right!=null){
+                List<Integer> newList=new LinkedList<>(n.list);
+                newList.add(n.node.right.val);
+                queue.add(new NodeAndList(n.node.right,newList,n.node.right.val+n.value));
             }
         }
-        return;
+        return resultList;
+    }
+}
+class NodeAndList{
+    TreeNode node;
+    List<Integer> list;
+    int value=0;
+
+    public NodeAndList(TreeNode node, List<Integer> list, int value) {
+        this.node = node;
+        this.list = list;
+        this.value = value;
     }
 }
