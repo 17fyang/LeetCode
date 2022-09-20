@@ -1,0 +1,64 @@
+package Q1800_1900;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * @Description:
+ * @Author: 乌鸦坐飞机亠
+ * @Date: 2022/9/13 23:01
+ */
+public class Q1893 {
+    public static void main(String[] args) {
+        System.out.println(new Q1893().longestBeautifulSubstring("oaiueoeoieeeeaoiuaoaeoiouaueaiooeuaeuouaiiauoooeaouuooauiaiauiaaeeaeuiaeoaiieoiauueoouuueeaeeeiiiouooiiiaoaoiiaaiuoeouiauooieaeaaieeouoiuieieooaiuoeuiueiuueeuaaoaueioououuioaeueauauiaueuaeaeoaaooiiueeiieieeouueoieaaoaiaeuuiiooeuuoeoaaioeiaioaouiaaaaaaueoeeoiauaeuiuieiuoaauaeauaeoieiaieiuioeoiuiooieiueuoaauooioueeuiuoeoouiieeoaoueouoouoiuuauieaaoooueaiuoeeeuoiueiaaioeaoeaaaoauaioaoioioaeueaaoioaooaooiiaeiaeuuaouoaouaoeiaueuueieuuauuauuouioiiaaaieiauuieaoooaoieuoioiaaeiaueeieeoaaeuaeoaeiuioiuuaaiauauiiioaueoeuiaooieooiouiuaaoueouaeauuuaeieieaioiauaooiioiueuieoiuiouoiiuoeiieeaeaaiuauuueuiuieaieiaieooeueeouueaeaaoieeauiieooaieioeiioeuaooeeeiiaieiiiaeiuueioiuuuaiaaaeueuieaaoiooaueuiuaiaaiaiooaoeeaaaoiaeauuoioieaoieooueueeuoiiaoiaaaouueaieuououiooouaaouiaaeaeoiuiieaeoiauaeueiiooiuiaiuieaaiooaaeeeauoeoieoooeuuooaaeuieuaouaiueaoaooeiiaouiiiaaeeueeoeoeaoeuaeiiueeoueaoiuieooaioaaieoouaeaaeoaeuaeieoeioouioiiiuiauioeeeueieieueeioeiieuaeeuoeuouiuaeaaoouaiioaaooeeeaeoauouueeeeaiiaiaeaoioaaueeuaoouooieaeieeiaaaeeioaoeaiouaaaiaeaeiooaeiaiuuaeaaeeiiouieauaioeeaaouieoaiouoeauaaaeieauoeoiiauaaooauooeoieaoaiioueuoaoaaooueeeuiieoeoiuiaioooaaaueeaoooieieeaieoiauiauoouuaoeueeioeauoaoiieeueeaieuuaououaoeuieiuueaoeieaaaoaauoiaoauuuoaieoauieuioiuaeeeeuuiooioieoeueiuuuaiuouuouooaooaaiiuueioiuoeuauaoeiaooeaaeooieeueeeeuoiueaeaeoiiuieeaaauiieieaiaooeieiaoooueieeuiiaoiuuoueuueaaauauooieuuaoaueuuuaieaieoeaeeaoeaueiuooaeauuiueeoaeieioeeiuiuuooieaiaueoioeuoiaiauiiuoaeoeiuueaiooooiuuuaoiaoaiouuoeoeeaauieaeouuaiaiioeauoioeououuoiioiaooeoeeoioieuuaaeaooeaeiuoiaaaoouaaeaaoiauueuoiieeaaueiiaueeiiuaeooeiueuoaioiaeaaoeeoeauaeiaaiuiaeiiiuoeoaieeuuiaaueaaeaoauoeueooeeuaioaeeouauuiioauiiuoiiiiioioaiuoaiueoouaaoeoeouaaeeieiaiaiiaeiiauieeueaaaeiieuaeiiuioaouaauaiaaiuauuoiioiiiiieoiooaoaoiuaeooiiiuuauuiueieiueeaiiuaaeoeaoaoeoaaeieoieueoieouoiauieaoiiiieooioeeeueeoooeouaoeiuiaaaaueiuuuieieeeoiiooaiuoeaueuioaeeoiiuoiiaaoaueuuiaieuoaoaaauouoaieaooooeiieuuuuiiueauaeaaoaeiuououuuiuueoiaiiuoioeeaueoaioeuoaooeoeooueaiiuuuiaiiuoauuaoeeeieoiiueauaoeaoaeioeoaiaeoueuaaiuaoioeiuaiieeaiiuaaiaiiaoouuaiiueoiuiuaiuueueiuieeiaeooieioieueeeioaeuooiieaoaoaaeeoaiaueuaeaoaaeeeoaiouaeeaauuooieuaoeeeaeaueueuieeeueeiaaeoaouueaiioeauioeoiioiaueioeeeaeeueouaiuaiaeeeuuauiiuuaiooauuaaouoieuouiueueoauuioaoouiuuaaiuiiieaiaoaoouauiauuoueeaiieeeiuoooeuoaauioiieooueiaueaoaouueuoooeaioieaoeiiiaieaoieeaeuiouiiuaiaaaaaaaeooeoueoaoaeiuuauouiaauoaiauuaeaaiiiaeieeooiueuuieeiiiauoiauoeaeuieaaieuuoeoooeaioauoiaaieuuioaeeouoeuueououaauoaaeoiuieoeaiiuueiuiaoieoioiuieooaueieiauieiaauuuiouieaoieoeoouiiaieauaeaoeuaieeiuaauoeeaaoiaauoaieiuouuuoaaeuiioiauueaoeeaeaeoaouieouuoeoeioeaeioaiuoouueiauuaeaeaiuoeaoouoiouaaoaeeuoiieeeiaooeeeouoiiueauoeiueuuaueuieouaouaeiueoiiieeoauoooeaoiaaooiauoioeouuuuuuaaiiioaueaoooaauuiuooaiooaoeaioiuaouuaeooiaiouiuoeiiuiaiiuoooeuuuaeaieeiuiiaeeeaoeueiaauoaiiiooeiaeoaieieueaiooueoueeoaioaouiaaauaoeaioeiaoaiaooiiuooeuaiuaoaouiuoueieeaiooeuaioeiauaioaeoiiuaauaeioouaooioooaeeaueaeoueeaeeiouaeaiauioouueoeueuaauuoaeaaaeiiauueiueieuooaioooaaeueiaiiuiuaieiuaioauaeauuaiioueioaeuooeoeoiueueeuiiooouiauuueeeaaeaeuouiueiueiaaieeaauoaeaeoeueuoeoiuiuuiuueuaioiaaeiioiuooeioieaoioouuaouoaiaeoeiuueauooaaoooeeuuuioeiaouueioeieoauaiauaaeoaiiieauaeioouoiuueiiuaioaeooiooeueueiouuoiaoooioeeeueiaoauiiooeuouiiooaiiiieioueoooioaoueeuaeeiuoeeouaaeauioeuieiaieeiaoueeeaeouauuiaiiauiauiiaooeoaooiuoioiieeaauiaeaioaaeuaeaiueeueeeeiueeaiuiiuoeeueoiuiaieaaiauoiuooeuiuiieiuaooeoaaooaeouoeuooiaauaauiiieiuiuiaaueuuiuuouioiaoeuaeueeieoieeooeouauoaeeueioeiaeaaooieoioooeaiiooiaeeaooaeuaouaiaiaoiuiouiaieaiaaoeeuioaieueoeeiaaoeauioeuiuaouoauooueoiaoeueaaiooouiouoaaiuoeuiiueuaiouoeauuiueaiiaieaoiaaeuuouoeioeiuaaooiiiieuauoiaooaauaouuieiueioueaioaooauiueeueuuooaoeeoaaeeeiuoueeeouueiuaaeeoaiouiiaaiouaeeuioaoiueaaeaeieueaoeiiaauaeeoeuouoaeiiioaiuuueueoaauoeueoeaaaaiaaiiuoaiaeieuuooiooouoiauooeieiiuuooieoaiauieeaiiueuoaaioauuuiieeaaioeiuoauiiiiuaaueoaiiaiaauieaeueooouiaaiouueiioeiueuouaiaauieuaiouiuaeeeauaeieeuoaeaaaoiaaaiaeauaioaaeiauoaiioieeeieeuueuououaiieaiuuauaeuauaaeoeuioaoaieiuieuuuoiuioeaoiauoaueiaeeaoooueoieeuaauaoaieoaueoioeeeuiiuueaauoaiaaoeaauaooeuuauioeaoiaauaiiaoioeoiuuiieiuieeaieiiouaioeaieeiaiuoieooaiaueauoaaiaeueueooooeaoioiooaiuiueauieieeuieaeoaoiieieuuiaaieoeuaouueauiiiouoeoueoaauaiuuieaaaoououaeaiiauiouiauiioaooeueoiiouiaiiouoiiiieoiiaauiueeuuiiuiuaaaaeeeuoaiaiiaeiuauoauaaaeeeaieieuaeaaeeiiueioaeaeeaueaaaioeaeaooeoaeiuaoeuaieaaiuaaueeoooieeooaieuaiiiuiaiaiiueiaoaiiiuaeeaiiaaeuoaeaiiiiaaouaaouaaiiiuueeoaouueuieoaaaiieeooaoooaoouoauuauiaaeuouaaiuuioooiouaiauuoeaeoaiaeouuoeiaouueiieiaueuieouaauaoaoeooeoooaeouaaiaueauioeuaoeeoaooiaeaooioaueooaaeouuueoiueeiioaueuoioioiiuoaoeeuaeioaooiaiuouioaeuoueeeeuuaueoiueoaaiuioiauueoueaiooauiuaioueeoaaoaoooiaioeuoaauoaiuooaeuieuiiieuueieiiuuoueeoeuuoieoaaoaeioaieuuuoiieouiueeouaeioaieeooaueeeeeeuaieuiuiiuiiiuouoooueeuaeueoaooauieaueaeoiaaoeaoaoiauaoioaaeoiuiauoiaaaoeaeieeuiaueueiuouuuaiaaeiaoiueaoeiuooiauoeauueaaeeieuoiooaieiaeeeeouiiioiieoeeuueeioeueeeeoaiioaieuioeuuiioieaooieiieiiieaooeuiaaeuaauuueououooeauiaiuaeiaeueiaoeiaeeuoooououoeoeouiiouoouieoiaoaeiiuoieueouuiioouauaoiaioauuioooaeauiaaoaoaoiiauuuaiueaioaouauouoauioeuiauoeoauuiouooauaeieoioaioieueuoeaaauoueuoeeioiiaeeuiauoiouueeooeoaauaooeaoauaeeioiaiuoeouieiuaeieaieuooioeoouuooeauaoiooeeeiaiueeaeueiuuieioaeoeiaoaaiuaoiauaiueeoaoeeiiaiauioeoaeaoaeiaoeaoioeoeieaauioaeuoeaieaiaeueaoieeeouaueoeoouiuoaouuaoaaaoiueooaoieeoaaueeueouiuoouuoueieioiaeaaaeieauioaoeaoaiieeiooieioeaaoiuoaaaiuoooouaeaueeeooeeoeaaioaaeaeoeuuiuuoiaieoeaeaiaieaeauooeueueioioioooiiuaouauuieoueieuoueooeuauuueuuuoaaiaauieuoeuaoaaaoaooaoaouoeiueeuuoauiaeaueaaeiaiaoieiaiauaioooeaeoeeueiiaieeieuoiaeaeoiaoeaeieeaeuuieoeaoaeeuiaoueieiiaoeieuuooaouuooaoaaoaeeoeauiiuuuueoeoaouioaaiaaioaaaaeioiaaaiiieaeiioiuuuauauieiooiieeuuuaoioiaueeoaiueoeiueeiauueoioooiuieiaoeiuoueuaiooueeeuioiiuioiuaeeaoeuieoueouuaeiieiiueaaaiauueeeieieiouaiueuoaaiiuooaoaoaouuuiuieioiaeauaooieuaaeeiieiieaooaiiuueeuaueiieaeoeooioeeoaooeueuaaaueooueeaueuueaueoouuiooouieiaeeuuuuoiuiiaaiiouoiuieuaueaueiiuoeueeiuiaauioiuieiaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooouuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuueouiaoueiioouueuoiiieeeeiouiauoiaieeiauoeouaeoaueaoeuuoeoeoaoeioaueioaaoueuuioaeeeooauoieuoiuooieiaoaauuaieieueioeiioaeaouiieoaiuiooauuuueeouuoooiauiioeouaeoueiuoiieiauioauuoeaeoeeaiuiuouuuoeioaouaieiuoaooioaeeeeaoeaieeoeoeoaoueiuieeeaoeieeeeiiaiaaiiueooaiaeoioeiiuuiueaiioaeieeeiuiiuiueueoeaoeooeeeeaoeueuuueauoeeaioaioauoeuiaaoeouiaeuaouaeoaueoieiaieeieoiaieeiuoaiiouaaiuoeiieeeoaiuuuaoeiiaoaauaoaueuuoeuuiioaeaoooieiuaiueeoeooooueieaaieeiuoaeuaiaaiaueueeooauaaoaiouuooiiuaiaieuaouaoauueaiuouooooauuiuoioaoiuaaoouuuuaiiaaaieiuiaooueiauooaeoiueuieoiuauoieeueaueieuueiuoioeaoueeieouiueeieoeiuaouoooiiuoauaoiaeoaaoaiooooiuoueaeeoieaeuiuieuuuuouiiiaeoieeeaaeauaeueueueoeauueuaoiueauuuouuieuiuiaauaeaaiouaeuauoeeuooeaooouiaueueiouuuaeaieuiuaaoouuioaueueaeuiauaiauaeieuuieioueueueaeaaueaouiuoieeoueaiieioaooioueeiouoeauuieouioooooeoioaeiieuoioaeoiaaeaaioioeeiaaeuoeiuoauueaioeuoeeoeioiuuaeaiueuoiaiuuoaeaouoaeauiooiaaiaiaiiuaiuoeieaouoeuiouuoaeoooiaaiaeuuueaooaieeuiiooaaaueaoeuaeeoeuooeaiiuiaiuaiiuoa"));
+    }
+
+    public static List<Character> TEMP = Arrays.asList('a', 'e', 'i', 'o', 'u');
+
+    public int longestBeautifulSubstring(String word) {
+        if (word == null || word.length() < 5) {
+            return 0;
+        }
+
+        char[] arr = word.toCharArray();
+        int max = 0;
+        int i = 0;
+        int j = 1;
+
+        while (j < arr.length) {
+            //左滑，找到合适的起点
+            while (i < arr.length && arr[i] != 'a') {
+                i++;
+                j = i + 1;
+            }
+            //右滑，找到字符变化交界处
+            while (j < arr.length && arr[j] == arr[j - 1]) {
+                j++;
+            }
+            //边界判断
+            if (i >= arr.length || j >= arr.length) {
+                break;
+            }
+            //交界处两字符
+            int rightIndex = TEMP.indexOf(arr[j]);
+            int lastIndex = TEMP.indexOf(arr[j - 1]);
+            if (rightIndex - lastIndex == 1 && rightIndex == TEMP.size() - 1) {
+                //如果两字符间隔为1，且最后一个字符为'u'，则取本次窗口值和max比较，并更新起点位置
+                int rightMax = j;
+                while (rightMax < arr.length && arr[rightMax] == arr[j]) {
+                    rightMax++;
+                }
+                max = Math.max(max, rightMax - i);
+                i = rightMax;
+            } else if (rightIndex - lastIndex != 1) {
+                //如果间隔不为1，则肯定不满足条件，重新设置起点
+                i = j;
+            }
+            //右滑，找下一个交界处
+            j++;
+        }
+        
+        return max;
+    }
+
+}

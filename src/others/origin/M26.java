@@ -1,4 +1,4 @@
-package others;
+package others.origin;
 
 import publicUtil.TreeNode;
 
