@@ -12,37 +12,39 @@ import java.util.List;
 可能会有多个正确的顺序，你只要返回一种就可以了。如果不可能完成所有课程，返回一个空数组
  */
 public class Q210 {
-	public static void main(String[] args) {
-	}
-	public int[] findOrder(int numCourses, int[][] prerequisites) {
-		List<Node>arr=new ArrayList<Node>(numCourses);
-		List<Node>temp=new ArrayList<Node>(numCourses);
-		for(int i=0;i<numCourses;i++) 		arr.add(new Node());
-		for(int i=0;i<numCourses;i++) 		temp.add(arr.get(i));
-		for(int i=0;i<prerequisites.length;i++) {
-			arr.get(prerequisites[i][0]).next.add(arr.get(prerequisites[i][1]));
-			arr.get(prerequisites[i][1]).last.add(arr.get(prerequisites[i][0]));
-		}
-		int[]	result=new  int[numCourses];
-		int locate=0;
-		while(!temp.isEmpty()) {
-			int beforeLength=temp.size();
-			for(Node n : temp) {
-				if(n.last.isEmpty()) {
-					temp.remove(n);
-					result[locate++]=arr.indexOf(n);
-					List<Node>nextList=n.next;
-					for(Node tempNode:nextList)	tempNode.last.remove(n);
-				}
-			}
-			if(temp.size()==beforeLength)		break;
-		}
-		if(!temp.isEmpty())	return new int[] {};
-		return result;
+    public static void main(String[] args) {
+    }
+
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        List<Node> arr = new ArrayList<>(numCourses);
+        List<Node> temp = new ArrayList<>(numCourses);
+        for (int i = 0; i < numCourses; i++) arr.add(new Node());
+        for (int i = 0; i < numCourses; i++) temp.add(arr.get(i));
+        for (int i = 0; i < prerequisites.length; i++) {
+            arr.get(prerequisites[i][0]).next.add(arr.get(prerequisites[i][1]));
+            arr.get(prerequisites[i][1]).last.add(arr.get(prerequisites[i][0]));
+        }
+        int[] result = new int[numCourses];
+        int locate = 0;
+        while (!temp.isEmpty()) {
+            int beforeLength = temp.size();
+            for (Node n : temp) {
+                if (n.last.isEmpty()) {
+                    temp.remove(n);
+                    result[locate++] = arr.indexOf(n);
+                    List<Node> nextList = n.next;
+                    for (Node tempNode : nextList) tempNode.last.remove(n);
+                }
+            }
+            if (temp.size() == beforeLength) break;
+        }
+        if (!temp.isEmpty()) return new int[]{};
+        return result;
     }
 }
-class Node{
-	List<Node> next=new  LinkedList<Node>();
-	List<Node> last=new  LinkedList<Node>();
+
+class Node {
+    List<Node> next = new LinkedList<>();
+    List<Node> last = new LinkedList<>();
 }
 
